@@ -1,0 +1,19 @@
+{
+  "name": "chrome-version-testing",
+  "version": "1.0.0",
+  "description": "Side-by-side Chrome version testing with Puppeteer",
+  "main": "test-chrome.js",
+  "scripts": {
+    "chrome:clear": "node test-chrome.js clear",
+    "chrome:install": "node test-chrome.js install",
+    "chrome:list": "node test-chrome.js list",
+    "chrome:launch": "node test-chrome.js launch",
+    "chrome:snapshot": "node test-chrome.js launch --headless --snapshot",
+    "test-chrome": "node test-chrome.js launch"
+  },
+  "dependencies": {
+    "@puppeteer/browsers": "2.13.0",
+    "minimist": "^1.2.8",
+    "puppeteer-core": "24.39.0"
+  }
+}
